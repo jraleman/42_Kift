@@ -1,0 +1,169 @@
+Language model created by QuickLM on Mon Jun 19 01:56:49 EDT 2017
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 36 sentences and 38 words
+
+\data\
+ngram 1=38
+ngram 2=72
+ngram 3=36
+
+\1-grams:
+-0.7782 </s> -0.3010
+-0.7782 <s> -0.2218
+-2.3345 ALARM -0.2218
+-2.3345 ALEXA -0.2218
+-2.3345 CAPTURE -0.2218
+-2.3345 COLORS -0.2218
+-2.3345 CONNECTED -0.2218
+-2.3345 DO -0.2218
+-2.3345 E-MAIL -0.2218
+-2.3345 FILES -0.2218
+-2.3345 FOR -0.2218
+-2.3345 HIDDEN -0.2218
+-2.3345 HISTORY -0.2218
+-2.3345 IN -0.2218
+-2.3345 INVERT -0.2218
+-2.3345 IS -0.2218
+-2.3345 KEVIN -0.2218
+-2.3345 KIFT -0.2218
+-2.3345 LIGHTS -0.2218
+-2.3345 MUSIC -0.2218
+-2.3345 NOT -0.2218
+-2.3345 OFF -0.2218
+-2.3345 ON -0.2218
+-2.3345 PARENTHESIS -0.2218
+-2.3345 PLAY -0.2218
+-2.3345 SCREENSHOT -0.2218
+-2.3345 SEARCH -0.2218
+-2.3345 SET -0.2218
+-2.3345 SHOW -0.2218
+-2.3345 SLEEP -0.2218
+-2.3345 TERM -0.2218
+-2.3345 THE -0.2218
+-2.3345 USER -0.2218
+-2.3345 VOLUME -0.2218
+-2.3345 WEATHER -0.2218
+-2.3345 WEB -0.2218
+-2.3345 WHERE -0.2218
+-2.3345 WHO -0.2218
+
+\2-grams:
+-1.8573 <s> ALARM 0.0000
+-1.8573 <s> ALEXA 0.0000
+-1.8573 <s> CAPTURE 0.0000
+-1.8573 <s> COLORS 0.0000
+-1.8573 <s> CONNECTED 0.0000
+-1.8573 <s> DO 0.0000
+-1.8573 <s> E-MAIL 0.0000
+-1.8573 <s> FILES 0.0000
+-1.8573 <s> FOR 0.0000
+-1.8573 <s> HIDDEN 0.0000
+-1.8573 <s> HISTORY 0.0000
+-1.8573 <s> IN 0.0000
+-1.8573 <s> INVERT 0.0000
+-1.8573 <s> IS 0.0000
+-1.8573 <s> KEVIN 0.0000
+-1.8573 <s> KIFT 0.0000
+-1.8573 <s> LIGHTS 0.0000
+-1.8573 <s> MUSIC 0.0000
+-1.8573 <s> NOT 0.0000
+-1.8573 <s> OFF 0.0000
+-1.8573 <s> ON 0.0000
+-1.8573 <s> PARENTHESIS 0.0000
+-1.8573 <s> PLAY 0.0000
+-1.8573 <s> SCREENSHOT 0.0000
+-1.8573 <s> SEARCH 0.0000
+-1.8573 <s> SET 0.0000
+-1.8573 <s> SHOW 0.0000
+-1.8573 <s> SLEEP 0.0000
+-1.8573 <s> TERM 0.0000
+-1.8573 <s> THE 0.0000
+-1.8573 <s> USER 0.0000
+-1.8573 <s> VOLUME 0.0000
+-1.8573 <s> WEATHER 0.0000
+-1.8573 <s> WEB 0.0000
+-1.8573 <s> WHERE 0.0000
+-1.8573 <s> WHO 0.0000
+-0.3010 ALARM </s> -0.3010
+-0.3010 ALEXA </s> -0.3010
+-0.3010 CAPTURE </s> -0.3010
+-0.3010 COLORS </s> -0.3010
+-0.3010 CONNECTED </s> -0.3010
+-0.3010 DO </s> -0.3010
+-0.3010 E-MAIL </s> -0.3010
+-0.3010 FILES </s> -0.3010
+-0.3010 FOR </s> -0.3010
+-0.3010 HIDDEN </s> -0.3010
+-0.3010 HISTORY </s> -0.3010
+-0.3010 IN </s> -0.3010
+-0.3010 INVERT </s> -0.3010
+-0.3010 IS </s> -0.3010
+-0.3010 KEVIN </s> -0.3010
+-0.3010 KIFT </s> -0.3010
+-0.3010 LIGHTS </s> -0.3010
+-0.3010 MUSIC </s> -0.3010
+-0.3010 NOT </s> -0.3010
+-0.3010 OFF </s> -0.3010
+-0.3010 ON </s> -0.3010
+-0.3010 PARENTHESIS </s> -0.3010
+-0.3010 PLAY </s> -0.3010
+-0.3010 SCREENSHOT </s> -0.3010
+-0.3010 SEARCH </s> -0.3010
+-0.3010 SET </s> -0.3010
+-0.3010 SHOW </s> -0.3010
+-0.3010 SLEEP </s> -0.3010
+-0.3010 TERM </s> -0.3010
+-0.3010 THE </s> -0.3010
+-0.3010 USER </s> -0.3010
+-0.3010 VOLUME </s> -0.3010
+-0.3010 WEATHER </s> -0.3010
+-0.3010 WEB </s> -0.3010
+-0.3010 WHERE </s> -0.3010
+-0.3010 WHO </s> -0.3010
+
+\3-grams:
+-0.3010 <s> ALARM </s>
+-0.3010 <s> ALEXA </s>
+-0.3010 <s> CAPTURE </s>
+-0.3010 <s> COLORS </s>
+-0.3010 <s> CONNECTED </s>
+-0.3010 <s> DO </s>
+-0.3010 <s> E-MAIL </s>
+-0.3010 <s> FILES </s>
+-0.3010 <s> FOR </s>
+-0.3010 <s> HIDDEN </s>
+-0.3010 <s> HISTORY </s>
+-0.3010 <s> IN </s>
+-0.3010 <s> INVERT </s>
+-0.3010 <s> IS </s>
+-0.3010 <s> KEVIN </s>
+-0.3010 <s> KIFT </s>
+-0.3010 <s> LIGHTS </s>
+-0.3010 <s> MUSIC </s>
+-0.3010 <s> NOT </s>
+-0.3010 <s> OFF </s>
+-0.3010 <s> ON </s>
+-0.3010 <s> PARENTHESIS </s>
+-0.3010 <s> PLAY </s>
+-0.3010 <s> SCREENSHOT </s>
+-0.3010 <s> SEARCH </s>
+-0.3010 <s> SET </s>
+-0.3010 <s> SHOW </s>
+-0.3010 <s> SLEEP </s>
+-0.3010 <s> TERM </s>
+-0.3010 <s> THE </s>
+-0.3010 <s> USER </s>
+-0.3010 <s> VOLUME </s>
+-0.3010 <s> WEATHER </s>
+-0.3010 <s> WEB </s>
+-0.3010 <s> WHERE </s>
+-0.3010 <s> WHO </s>
+
+\end\

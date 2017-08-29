@@ -1,0 +1,131 @@
+<!-- *********************************************************************** -->
+<!--                                                                         -->
+<!--                                                      :::      ::::::::  -->
+<!-- index.html                                         :+:      :+:    :+:  -->
+<!--                                                  +:+ +:+         +:+    -->
+<!-- By: jaleman <jaleman@student.42.us.org>        +#+  +:+       +#+       -->
+<!--                                              +#+#+#+#+#+   +#+          -->
+<!-- Created: 2017/06/15 17:02:36 by jaleman           #+#    #+#            -->
+<!-- Updated: 2017/06/15 17:02:37 by jaleman          ###   ########.fr      -->
+<!--                                                                         -->
+<!-- *********************************************************************** -->
+
+<!--
+
+    ##
+    ##
+    ##       ##
+    ##     ##
+    ##    ##
+    ##  ##
+    ## #
+    ###        ###############
+    ###       ##             ##
+    ## ##    ##            ##
+    ##  ##   ##          ##
+    ##    ## ##       ##~
+    ##     ####    ##
+    ##      ######
+            ##
+            ##
+              ##
+                 ###############
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Kevin - Speech Recognition</title>
+  <link rel="stylesheet" href="css/reset.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Background image-->
+    <div class="bg-image"></div>
+
+      <!-- Show communication stats -->
+      <div class="stats">
+        <ul>
+          <!-- Number of responses received -->
+          <li>
+            <span class='number'>42</span>
+            <span class='legend'>Responses</span>
+          </li>
+          <!-- Number of messages sent -->
+          <li>
+            <span class='number'>42</span>
+            <span class='legend'>Messages</span>
+          </li>
+            <div class="clean-div"></div>
+        </ul>
+      </div>
+
+    <!-- Controls -->
+    <div class="image"></div>
+    <input type="radio" id='one' name='control' checked/>
+    <label for="one"><i class='fa fa-comments-o' aria-hidden="true"></i></label>
+    <input type="radio" id='two' name='control' />
+    <label for="two"><i class='fa fa-list-ul' aria-hidden="true"></i></label>
+    <input type="radio" id='three' name='control' onclick="textVoice('aboutMe');"/>
+    <label for="three"><i class='fa fa-info' aria-hidden="true"></i></label>
+
+    <!-- Chat -->
+    <div class="all">
+
+      <!-- Show messages -->
+      <div class="chat">
+        <div class="show-message mCustomScrollbar">
+          <div id="showMessage"></div>
+          <div class="clean-div"></div>
+        </div>
+        <!-- Volume meter -->
+        <canvas id="meter" width="400" height="50"></canvas>
+      </div>
+
+      <!-- List of commands -->
+      <div class="command">
+        <div class="menu">
+          <h1>Say a command... It's as easy as:</h1>
+          <ul>
+            <li><a href="#" class="kevin_command">Kevin, time</a></li>
+            <li><a href="#" class="kevin_command">Kevin, screenshot</a></li>
+            <li><a href="#" class="kevin_command">Kevin, lights off</a></li>
+            <li><a href="#" class="kevin_command">Kevin, invert colors</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Kevin Kift info-->
+      <div class="about-me">
+        <p id="aboutMe">
+        Hello, my name is Kevin Kift.
+        I'm just a simple voice user interface using Sphinx.
+        I consider myself hardcore, because I'm C to the core.
+        </p>
+      </div>
+
+      <div class="clean-div"></div>
+    </div>
+
+  </div>
+
+  <!-- Scripts -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/volume-meter.js"></script>
+  <script type="text/javascript" src="js/responsive-voice.js"></script>
+  <script type="text/javascript" src="js/prefixfree.min.js"></script>
+  <script type="text/javascript" src="js/kift_voice.js"></script>
+  <script type="text/javascript" src="js/kift_chat.js"></script>
+  <script type="text/javascript" src="js/kift_client.js"></script>
+  <script type="text/javascript" src="js/kift_record.js"></script>
+
+</body>
+
+</html>

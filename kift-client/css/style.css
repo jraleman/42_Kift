@@ -1,0 +1,414 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   style.css                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jaleman <jaleman@student.42.us.org>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/06/17 19:59:52 by jaleman           #+#    #+#             */
+/*   Updated: 2017/06/17 19:59:53 by jaleman          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+@import url(https://fonts.googleapis.com/css?family=Gudea);
+
+body{
+	font-family: Gudea;
+	background : url('../images/background.jpg')
+  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+label i[class^='icon-'] , label i[class*='icon-']{
+	display: block;
+	padding: 14px 0;
+}
+
+a:hover i[class^='icon-'] , a:hover i[class*='icon-']{
+	color : #B69596;
+}
+
+.container{
+	width: 402px;
+	margin: 40px auto;
+	position: relative;
+	border: 1px solid #CFCFCF;
+	overflow: hidden;
+	background-color: #fff;
+	border-radius: 7px;
+}
+
+.clean-div{
+	width: 0;
+	height: 0;
+	clear: both;
+}
+
+.bg-image{
+	width: 402px;
+	height: 157px;
+	background-image: url('../images/mic.jpg');
+	position: relative;
+	border-bottom: 1px solid #38393A;
+}
+
+.bg-image:before{
+	content: '';
+	position: absolute;
+	width: 150px;
+	height: 213px;
+	background: -webkit-linear-gradient(rgba(240, 240, 240, 0.31) 22%, rgba(240, 237, 240, 0.22) 51%, rgba(214, 214, 214, 0.28) 80%);
+	background: -moz-linear-gradient(rgba(240, 240, 240, 0.31) 22%, rgba(240, 237, 240, 0.22) 51%, rgba(214, 214, 214, 0.28) 80%);
+	right: -56px;
+	-webkit-transform: rotate(-43deg);
+	-moz-transform: rotate(-48deg);
+	top: -79px;
+
+}
+
+h3 {
+	display: block;
+	position: absolute;
+	text-shadow : 0 -1px 2px #000;
+	left: 10px;
+	top: 14px;
+	font-size : 16px;
+	color : #F9F7F6;
+	font-weight: normal;
+}
+
+.stats{
+  background : #F0F2F1;
+	border-bottom: 1px solid #18191A;
+}
+
+.stats li{
+	float: left;
+  width: 201px;
+	box-sizing : border-box;
+	-moz-box-sizing : border-box;
+}
+
+.stats li:nth-child(1){
+	border-right: 1px solid #2D3234;
+}
+
+.stats a{
+	display: block;
+	padding : 10px 0;
+	text-decoration: none;
+	color: #F5F5F5;
+}
+
+.stats span{
+	padding : 5px;
+	display: block;
+	text-align: center;
+}
+
+.number{
+	color: #666;
+	font-size: 20px;
+}
+
+.legend{
+	color: #666;
+	font-size: 15px;
+}
+
+.image{
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	background: #F7F9F9;
+	border: 1px solid #211410;
+	top: 89px;
+	left: 140px;
+	border-radius: 50%;
+}
+
+.image:before{
+	content: '';
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	border-radius: 0%;
+	top: 20px;
+	left: 20px;
+	background-image: url('../images/logo-icon.png');
+	background-repeat: no-repeat;
+}
+
+.image:after{
+	content: '';
+	position: absolute;
+	width: 110px;
+	height: 65px;
+	border-radius: 90px 90px 0 0;
+	background: rgba(255, 255, 255, 0.22);
+	left: 29px;
+	-webkit-transform: rotate(42deg);
+	-moz-transform: rotate(42deg);
+}
+
+label{
+	display: inline-block;
+	width: 134px;
+	height: 52px;
+	text-align: center;
+	margin: 0 -2px;
+	text-decoration: none;
+	color : #9B9E8D;
+	font-size: 22px;
+	box-shadow: 0 2px 3px 0px #D8D7D7;
+	position: relative;
+	background: #fff;
+	z-index: 1;
+	-webkit-transition : all .25s ease;
+	-moz-transition : all .25s ease;
+}
+
+label:hover{
+	color: #767968;
+}
+
+.all:before{
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 9px 15px 0px 15px;
+	border-color: rgb(255, 255, 255) rgba(255, 0, 0, 0) rgb(27, 169, 236) rgba(0, 0, 255, 0);
+	left: 52px;
+	z-index: 1;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+}
+
+.all{
+	width: 1208px;
+}
+
+.chat{
+	float: left;
+	position: relative;
+	width: 403px;
+}
+
+.chat .show-message{
+	background : -webkit-linear-gradient(rgb(242, 242, 243) 15%, rgb(240, 243, 241) 36%, rgb(241, 240, 241) 58%, rgb(236, 236, 236) 81%);
+	background : -moz-linear-gradient(rgb(242, 242, 243) 15%, rgb(240, 243, 241) 36%, rgb(241, 240, 241) 58%, rgb(236, 236, 236) 81%);
+	border-bottom: 1px solid #D3D3D3;
+	padding-bottom: 30px;
+}
+
+.chat .type-text{
+	background : -webkit-linear-gradient(rgb(251, 251, 254) 18%, rgb(250, 251, 253) 51%, rgb(251, 251, 252) 78%);
+	background : -moz-linear-gradient(rgb(251, 251, 254) 18%, rgb(250, 251, 253) 51%, rgb(251, 251, 252) 78%);
+	padding-bottom: 13px;
+}
+
+input[type='text']{
+	border: 1px solid #CED3D9;
+	margin: 13px 0 0 28px;
+	padding: 10px;
+	outline: 0;
+	border-radius: 5px;
+	width: 235px;
+	color : #A0A0A0;
+}
+
+button[type='submit']{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: -webkit-linear-gradient(rgb(32, 199, 127) 21%, rgb(30, 180, 115) 52%, rgb(28, 160, 101) 79%);
+	background: -moz-linear-gradient(rgb(32, 199, 127) 21%, rgb(30, 180, 115) 52%, rgb(28, 160, 101) 79%);
+	background: -ms-linear-gradient(rgb(32, 199, 127) 21%, rgb(30, 180, 115) 52%, rgb(28, 160, 101) 79%);
+	box-shadow: inset 0 0 2px 1px #DDD7D7;
+	border: 1px solid #A0A0A0;
+	padding: 2px 22px 10px 20px;
+	margin: 0px 0 0 25px;
+	border-radius: 4px;
+}
+
+button[type='submit']:hover{
+	cursor: pointer;
+}
+
+button[type='submit']:hover #i{
+	color : #fff;
+}
+
+.kevin{
+	float: left;
+	margin: 30px 0 0 15px;
+}
+
+.user{
+	float: right;
+	margin : 20px 15px 0 0;
+}
+
+.kevin img , .user img{
+	border-radius: 2px;
+}
+
+.kevin img{
+	float: left;
+	margin: 10px 0 0 7px;
+}
+
+.user img{
+	float: right;
+	margin: 10px 7px 0 ;
+}
+
+.kevin .message{
+	border: 1px solid #BFE3EE;
+	margin: 2px 0 0 55px;
+	padding: 10px;
+	background: #eef5f7;
+	border-radius: 6px;
+	width: 180px;
+	position: relative;
+}
+
+.user .message{
+	border : 1px solid #E2E2E2;
+	margin: 2px 51px 0 0;
+	padding: 10px;
+	background: #f5f4f3;
+	border-radius: 6px;
+	position: relative;
+	width: 160px;
+}
+
+.kevin p , .user p{
+	font-size: 14px;
+}
+
+.user p{
+	color : #666;
+}
+
+.kevin p{
+	color : #666;
+}
+
+#i{
+	font-size: 25px;
+	color: #E8E8E8;
+	display: block;
+	margin-top: 4px;
+	-webkit-transition : all .25s ease;
+	-moz-transition : all .25s ease;
+}
+
+label:hover{
+	cursor: pointer;
+}
+
+input[type='radio']{
+	display: none;
+}
+
+input[type='radio']:checked + label{
+	color: #767968;
+}
+
+input[type='radio']#one:checked ~ .all{
+	margin-left: 0px;
+	-webkit-transition : all .5s ease-in-out;
+	-moz-transition : all .5s ease-in-out;
+}
+
+.about-me , .command{
+	width:402px;
+	height:282px;
+	float:left;
+	padding: 10px 0;
+	background : -webkit-linear-gradient(rgb(242, 242, 243) 15%, rgb(240, 243, 241) 36%, rgb(241, 240, 241) 58%, rgb(236, 236, 236) 81%);
+	background : -moz-linear-gradient(rgb(242, 242, 243) 15%, rgb(240, 243, 241) 36%, rgb(241, 240, 241) 58%, rgb(236, 236, 236) 81%);
+}
+
+.about-me  p {
+	margin : 60px 0;
+	text-align: center;
+	line-height: 30px;
+	color: #535252;
+	font-size: 18px;
+}
+
+input[type='radio']#two:checked  ~  .all{
+	margin-left: -403px;
+	-webkit-transition : all .5s ease-in-out;
+	-moz-transition : all .5s ease-in-out;
+}
+
+input[type='radio']#two:checked ~  .all:before{
+	left: 183px;
+}
+
+input[type='radio']#three:checked  ~  .all{
+	margin-left: -805px;
+	-webkit-transition : all .5s ease-in-out;
+	-moz-transition : all .5s ease-in-out;
+}
+
+input[type='radio']#three:checked ~  .all:before{
+	left: 319px;
+}
+
+.menu{
+	width: 350px;
+	height: inherit;
+	margin: 0 auto ;
+}
+
+ul{
+	width: inherit;
+	height: inherit;
+	list-style: none;
+}
+
+.menu li{
+	width: inherit;
+	border-bottom : 1px solid rgb(235, 235, 235);
+}
+
+.menu li:nth-child(1){
+	margin-top: 67px;
+}
+
+.menu li:last-child{
+	border-bottom: 0;
+}
+
+.command a{
+	display: block;
+	padding: 8px 15px;
+	text-decoration: none;
+	color : #4B4E43;
+	font-size: 18px;
+	text-align: center;
+	text-shadow : 0 0 0;
+	opacity: 1;
+}
+
+.command a:hover{
+	text-shadow : 0 0 1px #4F5144;
+	opacity: .8;
+}
+
+.fa:before, .label {
+  vertical-align: middle;
+  line-height: 2.5;
+}
+
+.menu, h1 {
+	padding-top: 20px;
+	padding-left: 10px;
+	margin-bottom: -30px;
+}

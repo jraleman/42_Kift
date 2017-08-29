@@ -1,0 +1,16 @@
+{
+ "name": "kevin",
+ "productName": "Kevin Kift",
+ "version": "0.1.0",
+ "main": "main.js",
+ "devDependencies": {
+  "electron": "^1.6.11",
+  "electron-packager": "^8.7.2"
+ },
+ "scripts": {
+  "build": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds"
+ },
+ "dependencies": {
+  "node-record-lpcm16": "^0.3.0"
+ }
+}
